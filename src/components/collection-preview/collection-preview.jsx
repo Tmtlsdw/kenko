@@ -5,8 +5,6 @@ import "./collection-preview.sass";
 
 const CollectionPreview = ({ title, items }) => (
   <div className={"collection-preview"}>
-    {console.log(title)}
-    {console.log(items)}
     <h1 className={"title"}>{title.toUpperCase()}</h1>
     <div className={"preview"}>
       {items
