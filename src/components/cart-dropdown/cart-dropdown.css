@@ -13,7 +13,6 @@
 }
 .cart-dropdown .cart-items {
   height: 240px;
-  display: flex;
   flex-direction: column;
   overflow: auto;
 }
