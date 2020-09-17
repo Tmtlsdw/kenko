@@ -33,15 +33,16 @@ class SignUp extends React.Component {
       );
       await createUserProfileDocument(user, { displayName });
     } catch (error) {
-      alert(error.message)
+      alert(error.message);
       console.error("Can't sign up", error);
     }
   };
 
-  handleChange= event => {
-    const {name, value} = event.target
-    this.setState({[name] : value})
-  }
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
+
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
@@ -81,11 +82,11 @@ class SignUp extends React.Component {
             label={"Confirm password"}
             required
           />
-          <CustomButton type={"submit"} children={"Sign Up"} />
+          <CustomButton type={"submit"}>Sign Up</CustomButton>
         </form>
       </div>
     );
   }
 }
 
-export default SignUp
+export default SignUp;
