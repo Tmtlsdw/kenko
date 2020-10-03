@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-export const HomePageContainer = styled.div`
+
+const HomePageStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
+export default HomePageStyled;
